@@ -1,0 +1,867 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.bom.gov.au/vic/observations/melbourne.shtml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html; charset=UTF-8
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sat, 27 Jan 2018 11:07:30 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-AU\" lang=\"en\">\n<!--Page:
+        pgv_obs_melbourne-->\n  <head>\n\n    <meta http-equiv=\"Content-Type\" content=\"text/html;
+        charset=ISO-8859-1\" />\n    <meta name=\"language\" content=\"english\" />\n
+        \   <meta http-equiv=\"refresh\" content=\"300\" />\n    <title>Latest Weather
+        Observations for the Melbourne Area</title>\n    <link rel=\"Schema.AGLS\"
+        href=\"http://www.naa.gov.au/recordkeeping/gov_online/agls/1.2\" />\n    <meta
+        name=\"DC.Identifier\" scheme=\"URI\" content=\"http://www.bom.gov.au/weather\"
+        />\n    <meta name=\"DC.Title\" content=\"Australian weather and warnings
+        information\" />\n    <meta name=\"DC.Creator\" content=\"corporateName=Bureau
+        of Meteorology\" />\n    <meta name=\"DC.Subject\" scheme=\"BoM_Library_Thesaurus\"
+        content=\"Weather forecast-Australia; Flood forecast-Australia; Severe weather
+        warnings; Satellite meteorology; Radar meteorology\" />\n    <meta name=\"DC.Publisher\"
+        content=\"corporateName=Bureau of Meteorology\" />\n    <meta name=\"DC.Date.created\"
+        scheme=\"ISO8601\" content=\"2000\" />\n    <meta name=\"DC.Description\"
+        content=\"Provides access to Australian weather forecasts, weather observations,
+        flood warnings and high sea forecasts from each state and territory provided
+        by the Bureau of Meteorology\" />\n    <meta name=\"DC.Type.documentType\"
+        scheme=\"BoM_document list\" content=\"Web page; map\" />\n    <meta name=\"DC.Format\"
+        content=\"text/html\" />\n    <meta name=\"DC.Coverage.jurisdiction\" content=\"Commonwealth
+        of Australia\" />\n    <meta name=\"DC.Rights\" scheme=\"URI\" content=\"http://www.bom.gov.au/other/copyright.shtml\"
+        />\n    <meta name=\"AGLS.Function\" scheme=\"AGIFT\" content=\"; Earth Sciences;
+        Atmospheric sciences; Hydrology; Oceanography\" />\n    <meta name=\"AGLS.Audience\"
+        scheme=\"BoM_audience list\" content=\"All\" />\n    <meta name=\"DC.Language\"
+        scheme=\"RFC1766\" content=\"en\" />\n    <meta name=\"DC.Type.aggregationLevel\"
+        content=\"collection\" />\n    <meta name=\"AGLS.Availability\" content=\"corporateName=Bureau
+        of Meteorology; address=GPO Box 1289K, Melbourne, Victoria; postcode=3001;
+        contact=tel 03 9669 4000; contact=fax 03 9669 4699; contact=ABN 92637533532\"
+        />\n    <meta name=\"keywords\" content=\"Weather forecasts; Weather warnings;
+        Weather observations; Tropical cyclone warnings; Flood warnings; Satellite
+        imagery; Radar imagery; Current and forecast charts\" />\n    <meta name=\"description\"
+        content=\"Provides access to Australian weather forecasts, weather observations,
+        flood warnings and high sea forecasts from each state and territory provided
+        by the Bureau of Meteorology\" />\n    <link rel=\"image_src\" href=\"http://www.bom.gov.au/images/ui/bom_logo_social.gif\"
+        />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/css/core.css\"
+        />\n<!--[if lte IE 7]><link rel=\"stylesheet\" type=\"text/css\" href=\"/css/core-ie.css\"
+        /><![endif]-->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/css/weather/weather.css\"
+        />\n    <script type=\"text/javascript\" src=\"/scripts/utilities.js\"></script>\n
+        \   <script type=\"text/javascript\" src=\"/libs/jquery/1.7.1/jquery.min.js\"></script>\n
+        \   <script type=\"text/javascript\" src=\"/libs/jquery/external/plugins/superfish/1.4.8/superfish.js\"></script>\n
+        \   <script type=\"text/javascript\" src=\"/libs/jquery/external/plugins/superfish/1.4.8/hoverIntent.js\"></script>\n
+        \   <script type=\"text/javascript\" src=\"/scripts/header-menus.js\"></script>\n
+        \ </head>\n  <body>\n<ul id=\"jumplinks\">\n\t\t<li><a href=\"#content\">Skip
+        to main content</a></li>\n\t</ul>\n\n    <!-- Start: PageHeight -->\n    <div
+        id=\"pageheight\">\n\t  <div id=\"pagewrap\">\n      <!-- Start: Header -->\n
+        \     <div id=\"header\">\n\t\t<div class=\"l_content\">\n\t\t\t<div id=\"header-logo\">\n\t\t\t\t<img
+        class=\"bannerprint\" width=\"1\" height=\"1\" alt=\"Print Background\" src=\"//ws.cdn.bom.gov.au/images/ui/bannerprint.gif\"
+        />\n\t\t\t\t<a id=\"logo\" href=\"/?ref=logo\"><img src=\"//ws.cdn.bom.gov.au/images/ui/bom_logo_clr.gif\"
+        title=\"Australian Government - Bureau of Meteorology\" alt=\"Australian Government
+        - Bureau of Meteorology\" /></a>\n\t\t\t</div>\n\t\t\t<div id=\"header-main\">\n\t\t\t\t<div
+        class=\"l_top\">\n\t\t\t\t\t<div id=\"header-search\">\n\t\t\t\t\t\t<form
+        action=\"//search.bom.gov.au/s/search.html\" method=\"get\" class=\"searchform\"
+        enctype=\"application/x-www-form-urlencoded\">\n\t\t\t\t\t\t\t<label for=\"query\">Search</label><input
+        type=\"text\" id=\"query\" name=\"query\" size=\"30\" placeholder=\"Enter
+        search terms\" value=\"\" />\n\t\t\t\t\t\t\t<input type=\"hidden\" name=\"collection\"
+        value=\"bom\" />\n\t\t\t\t\t\t\t<input type=\"submit\" value=\"Search\" name=\"Submit\"
+        title=\"Search\" class=\"search\" />\n\t\t\t\t\t\t</form>\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a
+        href=\"/?ref=hdr\">Home</a></li>\n\t\t\t\t\t\t<li><a href=\"/inside/index.shtml?ref=hdr\">About</a></li>\n
+        \                                               <li><a href=\"//media.bom.gov.au/\">Media</a></li>\n\t\t\t\t\t\t<li
+        class=\"last\"><a href=\"/inside/contacts.shtml?ref=hdr\">Contacts</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t\t<div
+        class=\"l_bottom\">\n\t\t\t\t\t<ul class=\"sf-menu\">\n\t\t\t\t\t\t<li id=\"sf-menu-nsw\">\n\t\t\t\t\t\t\t<abbr
+        title=\"New South Wales\"><a href=\"/nsw/?ref=hdr\" title=\"New South Wales\">NSW</a></abbr>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li
+        class=\"decoration\"><img src=\"//ws.cdn.bom.gov.au/images/weather/nsw-thumb.png\"
+        alt=\"\" /></li>\n\t\t\t\t\t\t\t\t<li class=\"heading\"><a href=\"/nsw/index.shtml?ref=hdr\"
+        title=\"New South Wales Weather and Warnings\">NSW Weather &amp; Warnings</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/nsw/warnings/index.shtml?ref=hdr\" title=\"New South Wales Warnings
+        Summary\">Warnings Summary</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/nsw/forecasts/index.shtml?ref=hdr\"
+        title=\"New South Wales Forecasts\">Forecasts</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/nsw/forecasts/sydney.shtml?ref=hdr\" title=\"Sydney Forecast\">Sydney
+        Forecast</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/nsw/forecasts/map.shtml?ref=hdr\"
+        title=\"New South Wales Forecast Area Map\">NSW Forecast Area Map</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/nsw/observations/index.shtml?ref=hdr\" title=\"New South Wales Weather
+        Observations\">Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/nsw/observations/sydney.shtml?ref=hdr\"
+        title=\"Latest Weather Observations for the Sydney Area\">Sydney Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/nsw/observations/nswall.shtml?ref=hdr\" title=\"Latest Weather Observations
+        for New South Wales\">All NSW Observations</a></li>\n\t\t\t\t\t\t\t\t<li class=\"last\"><a
+        href=\"/nsw/flood/index.shtml?ref=hdr\" title=\"New South Wales Rainfall and
+        River Conditions\">Rainfall &amp; River Conditions</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<div
+        class=\"sf-menu-pointer\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li id=\"sf-menu-vic\">\n\t\t\t\t\t\t\t<abbr
+        title=\"Victoria\"><a href=\"/vic/?ref=hdr\" title=\"Victoria\">VIC</a></abbr>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li
+        class=\"decoration\"><img src=\"//ws.cdn.bom.gov.au/images/weather/vic-thumb.png\"
+        alt=\"\" /></li>\n\t\t\t\t\t\t\t\t<li class=\"heading\"><a href=\"/vic/index.shtml?ref=hdr\"
+        title=\"Victorian Weather and Warnings\">VIC Weather &amp; Warnings</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/vic/warnings/index.shtml?ref=hdr\" title=\"Victorian Warnings Summary\">Warnings
+        Summary</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/vic/forecasts/index.shtml?ref=hdr\"
+        title=\"Victorian Forecasts\">Forecasts</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/vic/forecasts/melbourne.shtml?ref=hdr\"
+        title=\"Melbourne Forecast\">Melbourne Forecast</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/vic/forecasts/map.shtml?ref=hdr\" title=\"Victorian Forecast Areas
+        Map\">Vic. Forecast Areas Map</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/vic/observations/index.shtml?ref=hdr\"
+        title=\"Victorian Observations\">Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/vic/observations/melbourne.shtml?ref=hdr\" title=\"Latest Weather
+        Observations for the Melbourne Area\">Melbourne Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/vic/observations/vicall.shtml?ref=hdr\" title=\"Latest Weather Observations
+        for Victoria\">All Victorian Observations</a></li>\n\t\t\t\t\t\t\t\t<li class=\"last\"><a
+        href=\"/vic/flood/index.shtml?ref=hdr\" title=\"Victoria Rainfall and River
+        Conditions\">Rainfall &amp; River Conditions</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<div
+        class=\"sf-menu-pointer\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li id=\"sf-menu-qld\">\n\t\t\t\t\t\t\t<abbr
+        title=\"Queensland\"><a href=\"/qld/?ref=hdr\" title=\"Queensland\">QLD</a></abbr>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li
+        class=\"decoration\"><img src=\"//ws.cdn.bom.gov.au/images/weather/qld-thumb.png\"
+        alt=\"\" /></li>\n\t\t\t\t\t\t\t\t<li class=\"heading\"><a href=\"/qld/index.shtml?ref=hdr\"
+        title=\"Queensland Weather and Warnings\">QLD Weather &amp; Warnings</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/qld/warnings/index.shtml?ref=hdr\" title=\"Queensland Warnings Summary\">Warnings
+        Summary</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/qld/forecasts/index.shtml?ref=hdr\"
+        title=\"Queensland Forecasts\">Forecasts</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/qld/forecasts/brisbane.shtml?ref=hdr\" title=\"Brisbane Forecast\">Brisbane
+        Forecast</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/qld/forecasts/map.shtml?ref=hdr\"
+        title=\"Queensland Forecast Areas Map\">Qld. Forecast Areas Map</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/qld/observations/index.shtml?ref=hdr\" title=\"Queensland Observations\">Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/qld/observations/brisbane.shtml?ref=hdr\" title=\"Latest Weather Observations
+        for the Brisbane Area\">Brisbane Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/qld/observations/qldall.shtml?ref=hdr\" title=\"Latest Weather Observations
+        for Queensland\">All Queensland Observations</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"last\"><a href=\"/qld/flood/index.shtml?ref=hdr\" title=\"Queensland
+        Rainfall and River Conditions\">Rainfall &amp; River Conditions</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<div
+        class=\"sf-menu-pointer\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li id=\"sf-menu-wa\">\n\t\t\t\t\t\t\t<abbr
+        title=\"Western Australia\"><a href=\"/wa/?ref=hdr\" title=\"Western Australia\">WA</a></abbr>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li
+        class=\"decoration\"><img src=\"//ws.cdn.bom.gov.au/images/weather/wa-thumb.png\"
+        alt=\"\" /></li>\n\t\t\t\t\t\t\t\t<li class=\"heading\"><a href=\"/wa/index.shtml?ref=hdr\"
+        title=\"Western Australia Weather and Warnings\">WA Weather &amp; Warnings</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/wa/warnings/index.shtml?ref=hdr\" title=\"Western Australia Warnings
+        Summary\">Warnings Summary</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/wa/forecasts/index.shtml?ref=hdr\"
+        title=\"Western Australia Forecasts\">Forecasts</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/wa/forecasts/perth.shtml?ref=hdr\" title=\"Perth Forecast\">Perth
+        Forecast</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/wa/forecasts/map.shtml?ref=hdr\"
+        title=\"Western Australian Forecast Areas Map\">WA Forecast Areas Map</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/wa/observations/index.shtml?ref=hdr\" title=\"Western Australia Observations\">Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/wa/observations/perth.shtml?ref=hdr\" title=\"Latest Weather Observations
+        for the Perth Area\">Perth Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/wa/observations/waall.shtml?ref=hdr\"
+        title=\"Latest Weather Observations for Western Australia\">All WA Observations</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"last\"><a href=\"/wa/flood/index.shtml?ref=hdr\" title=\"Western Australia
+        Rainfall and River Conditions\">Rainfall &amp; River Conditions</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<div
+        class=\"sf-menu-pointer\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li id=\"sf-menu-sa\">\n\t\t\t\t\t\t\t<abbr
+        title=\"South Australia\"><a href=\"/sa/?ref=hdr\" title=\"South Australia\">SA</a></abbr>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li
+        class=\"decoration\"><img src=\"//ws.cdn.bom.gov.au/images/weather/sa-thumb.png\"
+        alt=\"\" /></li>\n\t\t\t\t\t\t\t\t<li class=\"heading\"><a href=\"/sa/index.shtml?ref=hdr\"
+        title=\"South Australian Weather and Warnings\">SA Weather &amp; Warnings</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/sa/warnings/index.shtml?ref=hdr\" title=\"Warnings for South Australia\">Warnings
+        Summary</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/sa/forecasts/index.shtml?ref=hdr\"
+        title=\"South Australian Forecasts\">Forecasts</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/sa/forecasts/adelaide.shtml?ref=hdr\" title=\"Adelaide Forecast\">Adelaide
+        Forecast</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/sa/forecasts/map.shtml?ref=hdr\"
+        title=\"South Australia Forecast Area Map\">SA Forecast Area Map</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/sa/observations/index.shtml?ref=hdr\" title=\"South Australian Observations\">Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/sa/observations/adelaide.shtml?ref=hdr\" title=\"Latest Weather Observations
+        for the Adelaide Area\">Adelaide Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/sa/observations/saall.shtml?ref=hdr\" title=\"Latest Weather Observations
+        for South Australia\">All SA Observations</a></li>\n\t\t\t\t\t\t\t\t<li class=\"last\"><a
+        href=\"/sa/flood/index.shtml?ref=hdr\" title=\"South Australia Rainfall and
+        River Conditions\">Rainfall &amp; River Conditions</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<div
+        class=\"sf-menu-pointer\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li id=\"sf-menu-tas\">\n\t\t\t\t\t\t\t<abbr
+        title=\"Tasmania\"><a href=\"/tas/?ref=hdr\" title=\"Tasmania\">TAS</a></abbr>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li
+        class=\"decoration\"><img src=\"//ws.cdn.bom.gov.au/images/weather/tas-thumb.png\"
+        alt=\"\" /></li>\n\t\t\t\t\t\t\t\t<li class=\"heading\"><a href=\"/tas/index.shtml?ref=hdr\"
+        title=\"Tasmanian Weather and Warnings\">TAS Weather &amp; Warnings</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/tas/warnings/index.shtml?ref=hdr\" title=\"Tasmanian Warnings Summary\">Warnings
+        Summary</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/tas/forecasts/index.shtml?ref=hdr\"
+        title=\"Tasmanian Forecasts\">Forecasts</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/tas/forecasts/hobart.shtml?ref=hdr\"
+        title=\"Hobart Forecast\">Hobart Forecast</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/tas/forecasts/map.shtml?ref=hdr\" title=\"Tasmanian Forecast Areas
+        Map\">Tas. Forecast Areas Map</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/tas/observations/index.shtml?ref=hdr\"
+        title=\"Tasmanian Observations\">Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/tas/observations/hobart.shtml?ref=hdr\" title=\"Latest Weather Observations
+        for the Hobart Area\">Hobart Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/tas/observations/tasall.shtml?ref=hdr\" title=\"Latest Weather Observations
+        for Tasmania\">All Tasmanian Observations</a></li>\n\t\t\t\t\t\t\t\t<li class=\"last\"><a
+        href=\"/tas/flood/index.shtml?ref=hdr\" title=\"Tasmania Rainfall and River
+        Conditions\">Rainfall &amp; River Conditions</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<div
+        class=\"sf-menu-pointer\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li id=\"sf-menu-act\">\n\t\t\t\t\t\t\t<abbr
+        title=\"Australian Capital Territory\"><a href=\"/act/?ref=hdr\" title=\"Australian
+        Capital Territory\">ACT</a></abbr>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li
+        class=\"decoration\"><img src=\"//ws.cdn.bom.gov.au/images/weather/act-thumb.png\"
+        alt=\"\" /></li>\n\t\t\t\t\t\t\t\t<li class=\"heading\"><a href=\"/act/index.shtml?ref=hdr\"
+        title=\"Australian Capital Territory Weather and Warnings\">ACT Weather &amp;
+        Warnings</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/act/warnings/index.shtml?ref=hdr\"
+        title=\"Australian Capital Territory Warnings Summary\">Warnings Summary</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/act/forecasts/index.shtml?ref=hdr\" title=\"Australian Capital Territory
+        Forecasts\">Forecasts</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/act/forecasts/canberra.shtml?ref=hdr\"
+        title=\"Canberra Forecast\">Canberra Forecast</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/act/forecasts/act.shtml?ref=hdr\" title=\"Australian Capital Territory
+        Forecast\">ACT Forecast</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/act/observations/index.shtml?ref=hdr\"
+        title=\"Australian Capital Territory Observations\">Observations</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"last\"><a href=\"/act/observations/canberra.shtml?ref=hdr\" title=\"Latest
+        Weather Observations for the Canberra Area\">Canberra Observations</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<div
+        class=\"sf-menu-pointer\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li id=\"sf-menu-nt\">\n\t\t\t\t\t\t\t<abbr
+        title=\"Northern Territory\"><a href=\"/nt/?ref=hdr\" title=\"Northern Territory\">NT</a></abbr>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li
+        class=\"decoration\"><img src=\"//ws.cdn.bom.gov.au/images/weather/nt-thumb.png\"
+        alt=\"\" /></li>\n\t\t\t\t\t\t\t\t<li class=\"heading\"><a href=\"/nt/index.shtml?ref=hdr\"
+        title=\"Northern Territory Weather and Warnings\">NT Weather &amp; Warnings</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/nt/warnings/index.shtml?ref=hdr\" title=\"Northern Territory Warnings
+        Summary\">Warning Summary</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/nt/forecasts/index.shtml?ref=hdr\"
+        title=\"Northern Territory Forecasts\">Forecasts</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/nt/forecasts/darwin.shtml?ref=hdr\" title=\"Darwin Forecast\">Darwin
+        Forecast</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/nt/forecasts/map.shtml?ref=hdr\"
+        title=\"Northern Territory Forecast Area Map\">NT Forecast Areas Map</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/nt/observations/index.shtml?ref=hdr\" title=\"Northern Territory Weather
+        Observations\">Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/nt/observations/darwin.shtml?ref=hdr\"
+        title=\"Latest Weather Observations for Darwin Area\">Darwin Observations</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/nt/observations/ntall.shtml?ref=hdr\" title=\"All NT Weather Observations\">All
+        NT Observations</a></li>\n\t\t\t\t\t\t\t\t<li class=\"last\"><a href=\"/nt/flood/index.shtml?ref=hdr\"
+        title=\"Northern Territory Rainfall and River Conditions\">Rainfall &amp;
+        River Conditions</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<div class=\"sf-menu-pointer\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li
+        id=\"sf-menu-aus\" class=\"separator\">\n\t\t\t\t\t\t\t<a href=\"/australia/?ref=hdr\"
+        title=\"National Weather and Warnings\">Australia</a>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li
+        class=\"decoration\"><img src=\"//ws.cdn.bom.gov.au/images/weather/aus-thumb.png\"
+        alt=\"\" /></li>\n\t\t\t\t\t\t\t\t<li class=\"heading\"><a href=\"/australia/index.shtml?ref=hdr\"
+        title=\"National Weather and Warnings\">National Weather &amp; Warnings</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/australia/warnings/index.shtml?ref=hdr\" title=\"National Warnings
+        Summary\">Warnings Summary</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/australia/majorcities.shtml?ref=hdr\"
+        title=\"Major Cities Forecast plus Outlook\">Major Cities</a></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"/australia/radar/index.shtml?ref=hdr\" title=\"Radar Images\">Radar
+        Images</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/australia/charts/index.shtml?ref=hdr\"
+        title=\"Weather Maps\">Weather Maps</a></li>\n\t\t\t\t\t\t\t\t<li><a href=\"/australia/satellite/index.shtml?ref=hdr\"
+        title=\"Recent Satellite Images\">Satellite Images</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"last\"><a href=\"/australia/flood/index.shtml?ref=hdr\" title=\"Australia
+        Rainfall and River Conditions\">Rainfall &amp; River Conditions</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<div
+        class=\"sf-menu-pointer\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"no-menu\"><a
+        href=\"/global/?ref=hdr\" title=\"Global Weather and Warnings\">Global</a></li>\n\t\t\t\t\t\t<li
+        class=\"last no-menu\"><a href=\"/ant/?ref=hdr\" title=\"Antarctic and Southern
+        Ocean Weather\">Antarctica</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div
+        class=\"l_shadow\"></div>\n      </div>\n      <!-- End: Header -->\n\n      <!--\r\n<div
+        id=\"site-announcement\">\r\n<p>Insert message</p>\r\n</div>\r\n-->\n\n      <!--
+        Start: Columns -->\n      <div id=\"columns\">\n\n<!-- Start: Container -->\n
+        \   <div id=\"container\" class=\"fullwidth\"><!-- Begin: Breadcrumb --><p
+        id=\"breadcrumb\"><a href=\"/index.shtml\">Bureau Home</a> &gt; <a href=\"/australia/index.shtml\">Australia</a>
+        &gt; <a href=\"/vic/index.shtml\">Victoria</a> &gt; <a href=\"/vic/observations/index.shtml\">Observations</a>
+        &gt; <strong>Latest Weather Observations for the Melbourne Area</strong></p><!--
+        End: Breadcrumb --><h1>Latest Weather Observations for the Melbourne Area</h1>\n<div
+        id=\"page-info\">\n\n\t<ul class=\"strip-nav\">\n\t\t<li><a href=\"/catalogue/observations/about-weather-observations.shtml\">About
+        weather observations</a></li>\n\t\t<li><a href=\"/vic/observations/melbournemap.shtml\">Map
+        of Melbourne area stations</a></li>\n\t\t<li><a title=\"VIC weather observations\"
+        href=\"/vic/observations/index.shtml\">All VIC observations</a></li>\n\t\t<li><a
+        title=\"VIC state weather observations\" href=\"/vic/observations/vicall.shtml\">Latest
+        VIC observations</a></li>\n\t\t<li><a title=\"VIC coastal weather observations\"
+        href=\"/vic/observations/coastal.shtml\">Latest Coastal VIC observations</a></li>\n\t</ul>\n\t\n</div>\n<!--
+        Start: Content --><div id=\"content\"><h1>Latest Weather Observations for
+        the Melbourne Area</h1>\n\n<div class=\"p-id\">IDV60900</div>\n\n\n\n<p>\nIssued
+        at 10:01 pm EDT Saturday 27 January 2018 (issued every 10 minutes, with the
+        page automatically refreshed every 5 minutes)\n</p>\n\n<div>\n\t<p>Where no
+        observation is available within the last 75 minutes, the latest observation
+        is shown in <span class=\"contrast\">italics and coloured</span> and removed
+        from the table after 30 hours.<br/>\n\tStation names link to data for the
+        previous 72 hours.</p>\n</div>\n\n\n\n<h2 id=\"MELBOURNE\">MELBOURNE AREA</h2>\n<table
+        id=\"tMELBOURNE\" border=\"1\" cellspacing=\"0\" class=\"tabledata obs_table\"
+        summary=\"The table for MELBOURNE has 19 columns. The first 14 columns are
+        latest observations and the 5 end columns have daily temperature and wind
+        extremes. There are 3 rows of table headers.\"> <!-- ABCD open product division
+        table before col headings -->\n<colgroup>\n<col class=\"col_station\" />\n
+        \ <col />\n  <col span=\"5\" />\n  <col span=\"5\" />\n  <col />\n  <col />\n
+        \ <col span=\"5\" />\n  </colgroup>\n \n<thead>\n    <tr>\n\t<th id=\"tMELBOURNE-station\"
+        rowspan=\"2\" class=\"rowleftcolumn\">&nbsp;</th>\n\t<th id=\"tMELBOURNE-datetime\"
+        rowspan=\"2\" title=\"Date and local time\">Date/Time<br /><acronym title=\"Eastern
+        Daylight Savings Time\">EDT</acronym></th>\n\t<th id=\"tMELBOURNE-tmp\" rowspan=\"2\"><abbr
+        title=\"Temperature, degrees Celsius\">Temp<br />&deg;C</abbr></th>\n\t<th
+        id=\"tMELBOURNE-apptmp\" rowspan=\"2\"><abbr title=\"Apparent Temperature,
+        degrees Celsius\">App<br />Temp<br />&deg;C</abbr></th>\n\t<th id=\"tMELBOURNE-dewpoint\"
+        rowspan=\"2\"><abbr title=\"Dew Point Temperature, degrees Celsius\">Dew<br
+        />Point<br />&deg;C</abbr></th>\n\t<th id=\"tMELBOURNE-relhum\" rowspan=\"2\"><abbr
+        title=\"Relative Humidity, percentage\">Rel<br />Hum<br />%</abbr></th>\n\t<th
+        id=\"tMELBOURNE-delta-t\" rowspan=\"2\"><abbr title=\"Wet Bulb Depression,
+        degrees Celsius\">Delta-T<br />&deg;C</abbr></th>\n\t<th id=\"tMELBOURNE-wind\"
+        colspan=\"5\">Wind</th>\n\t<th id=\"tMELBOURNE-press\" rowspan=\"2\"><abbr
+        title=\"Pressure, hectopascals\">Press<br />hPa</abbr></th>\n\t<th id=\"tMELBOURNE-rainsince9am\"
+        rowspan=\"2\" title=\"Rain since 9am, millimetres\">Rain since<br />9am<br
+        /><abbr title=\"millimetres\">mm</abbr></th>\n\t<!-- extremes -->\n\t<th id=\"tMELBOURNE-lowtmp\"
+        rowspan=\"2\" class=\"bgcolor1\"><abbr title=\"Lowest Temperature, degrees
+        Celsius, from 6pm to 9am\">Low<br />Temp<br />&deg;C</abbr><br /><small>time</small></th>\n\t<th
+        id=\"tMELBOURNE-hightmp\" rowspan=\"2\" class=\"bgcolor1\"><abbr title=\"Highest
+        Temperature, degrees Celsius, from 6am to 9pm\">High<br />Temp<br />&deg;C</abbr><br
+        /><small>time</small></th>\n\t<th id=\"tMELBOURNE-highwind\" colspan=\"3\"
+        class=\"bgcolor1\" title=\"Highest Wind Gust from midnight\">Highest Wind
+        Gust</th>\n  </tr>\n  <tr>\n\t<th headers=\"tMELBOURNE-wind\" id=\"tMELBOURNE-wind-dir\"><abbr
+        title=\"Direction the wind comes from\">Dir</abbr>&nbsp;</th>\n\t<th headers=\"tMELBOURNE-wind\"
+        id=\"tMELBOURNE-wind-spd-kmh\"><abbr title=\"Wind Speed, kilometres per hour,
+        10-minute average from the standard height of 10 metres\">Spd<br />km/h</abbr></th>\n\t<th
+        headers=\"tMELBOURNE-wind\" id=\"tMELBOURNE-wind-gust-kmh\"><abbr title=\"Wind
+        Gust, kilometres per hour, measured over 3 seconds from the standard height
+        of 10 metres\">Gust<br />km/h</abbr></th>\n\t<th headers=\"tMELBOURNE-wind\"
+        id=\"tMELBOURNE-wind-spd-kts\"><abbr title=\"Wind Speed, knots, 10-minute
+        average from the standard height of 10 metres\">Spd<br />kts</abbr></th>\n\t<th
+        headers=\"tMELBOURNE-wind\" id=\"tMELBOURNE-wind-gust-kts\"><abbr title=\"Wind
+        Gust, knots, measured over 3 seconds from the standard height of 10 metres\">Gust<br
+        />kts</abbr></th>\n\t<!-- extremes -->\n\t<th headers=\"tMELBOURNE-highwind\"
+        id=\"tMELBOURNE-highwind-dir\" class=\"bgcolor1\">&nbsp;<abbr title=\"Direction
+        the wind comes from\">Dir</abbr>&nbsp;</th>\n\t<th headers=\"tMELBOURNE-highwind\"
+        id=\"tMELBOURNE-highwind-gust-kmh\" class=\"bgcolor1\"><abbr title=\"Wind
+        Gust, kilometres per hour, measured over 3 seconds from the standard height
+        of 10 metres\">km/h</abbr><br /><small>time</small></th>\n\t<th headers=\"tMELBOURNE-highwind\"
+        id=\"tMELBOURNE-highwind-gust-kts\" class=\"bgcolor1\"><abbr title=\"Wind
+        Gust, knots, measured over 3 seconds from the standard height of 10 metres\">kts</abbr><br
+        /><small>time</small></th>\n  </tr>\n</thead>\n\n<tfoot>\n  <tr>\n\t<th rowspan=\"2\"
+        class=\"rowleftcolumn\">&nbsp;</th>\n\t<th rowspan=\"2\" title=\"Date and
+        local time\">Date/Time<br /><acronym title=\"Eastern Daylight Savings Time\">EDT</acronym></th>\n\t<th
+        rowspan=\"2\"><abbr title=\"Temperature, degrees Celsius\">Temp<br />&deg;C</abbr></th>\n\t<th
+        rowspan=\"2\"><abbr title=\"Apparent Temperature, degrees Celsius\">App<br
+        />Temp<br />&deg;C</abbr></th>\n\t<th rowspan=\"2\"><abbr title=\"Dew Point
+        Temperature, degrees Celsius\">Dew<br />Point<br />&deg;C</abbr></th>\n\t<th
+        rowspan=\"2\"><abbr title=\"Relative Humidity, percentage\">Rel<br />Hum<br
+        />%</abbr></th>\n\t<th rowspan=\"2\"><abbr title=\"Wet Bulb Depression, degrees
+        Celsius\">Delta-T<br />&deg;C</abbr></th>\n\t<th colspan=\"5\">Wind</th>\n\t<th
+        rowspan=\"2\"><abbr title=\"Pressure, hectopascals\">Press<br />hPa</abbr></th>\n\t<th
+        rowspan=\"2\" title=\"Rain since 9am, millimetres\">Rain since<br />9am<br
+        /><abbr title=\"millimetres\">mm</abbr></th>\n\t<!-- extremes -->\n\t<th rowspan=\"2\"
+        class=\"bgcolor1\"><abbr title=\"Lowest Temperature, degrees Celsius, from
+        6pm to 9am\">Low<br />Temp<br />&deg;C</abbr><br /><small>time</small></th>\n\t<th
+        rowspan=\"2\" class=\"bgcolor1\"><abbr title=\"Highest Temperature, degrees
+        Celsius, from 6am to 9pm\">High<br />Temp<br />&deg;C</abbr><br /><small>time</small></th>\n\t<th
+        colspan=\"3\" class=\"bgcolor1\" title=\"Highest Wind Gust from midnight\">Highest
+        Wind Gust</th>\n  </tr>\n  <tr>\n\t<th><abbr title=\"Direction the wind comes
+        from\">Dir</abbr></th>\n\t<th><abbr title=\"Wind Speed, kilometres per hour,
+        10-minute average from the standard height of 10 metres\">Spd<br />km/h</abbr></th>\n\t<th><abbr
+        title=\"Wind Gust, kilometres per hour, measured over 3 seconds from the standard
+        height of 10 metres\">Gust<br />km/h</abbr></th>\n\t<th><abbr title=\"Wind
+        Speed, knots, 10-minute average from the standard height of 10 metres\">Spd<br
+        />kts</abbr></th>\n\t<th><abbr title=\"Wind Gust, knots, measured over 3 seconds
+        from the standard height of 10 metres\">Gust<br />kts</abbr></th>\n\t<!--
+        extremes -->\n\t<th class=\"bgcolor1\">&nbsp;<abbr title=\"Direction the wind
+        comes from\">Dir</abbr>&nbsp;</th>\n\t<th class=\"bgcolor1\"><abbr title=\"Wind
+        Gust, kilometres per hour, measured over 3 seconds from the standard height
+        of 10 metres\">km/h</abbr><br /><small>time</small></th>\n\t<th class=\"bgcolor1\"><abbr
+        title=\"Wind Gust, knots, measured over 3 seconds from the standard height
+        of 10 metres\">kts</abbr><br /><small>time</small></th>\n  </tr>\n</tfoot>\n\n\n<tbody>
+        <!-- abcd open product tbody -->\n<tr class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-melbourne-olympic-park\"
+        class=\"rowleftcolumn\"><a href=\"/products/IDV60901/IDV60901.95936.shtml\">Melbourne
+        (Olympic Park)</a></th>\n  <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-melbourne-olympic-park\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-melbourne-olympic-park\">28.3</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-melbourne-olympic-park\">31.0</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-melbourne-olympic-park\">19.5</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-melbourne-olympic-park\">59</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-melbourne-olympic-park\">5.7</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-melbourne-olympic-park\">SSE</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-melbourne-olympic-park\">4</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-melbourne-olympic-park\">7</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-melbourne-olympic-park\">2</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-melbourne-olympic-park\">4</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-melbourne-olympic-park\">1007.6</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-melbourne-olympic-park\">0.0</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-melbourne-olympic-park\">28.3<br
+        /><small>10:00pm</small></td>\n  <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-melbourne-olympic-park\">33.2<br
+        /><small>05:11pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir
+        tMELBOURNE-station-melbourne-olympic-park\">SE</td>\n  <td headers=\"tMELBOURNE-highwind
+        tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-melbourne-olympic-park\">28<br
+        /><small>07:07pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-melbourne-olympic-park\">15<br /><small>07:07pm</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-melbourne-airport\"
+        class=\"rowleftcolumn\"><a href=\"/products/IDV60901/IDV60901.94866.shtml\">Melbourne
+        Airport</a></th>\n  <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-melbourne-airport\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-melbourne-airport\">25.6</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-melbourne-airport\">27.3</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-melbourne-airport\">19.3</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-melbourne-airport\">68</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-melbourne-airport\">4.1</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-melbourne-airport\">SW</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-melbourne-airport\">9</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-melbourne-airport\">11</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-melbourne-airport\">5</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-melbourne-airport\">6</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-melbourne-airport\">1008.6</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-melbourne-airport\">0.0</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-melbourne-airport\">25.5<br
+        /><small>10:00pm</small></td>\n  <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-melbourne-airport\">33.7<br
+        /><small>04:20pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir
+        tMELBOURNE-station-melbourne-airport\">SE</td>\n  <td headers=\"tMELBOURNE-highwind
+        tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-melbourne-airport\">35<br
+        /><small>06:08pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-melbourne-airport\">19<br /><small>06:08pm</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-avalon\" class=\"rowleftcolumn\"><a
+        href=\"/products/IDV60901/IDV60901.94854.shtml\">Avalon</a></th>\n  <td headers=\"tMELBOURNE-datetime
+        tMELBOURNE-station-avalon\">27/10:00pm</td>\n  <td headers=\"tMELBOURNE-tmp
+        tMELBOURNE-station-avalon\">21.5</td>\n  <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-avalon\">23.0</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-avalon\">21.3</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-avalon\">99</td>\n  <td
+        headers=\"tMELBOURNE-delta-t tMELBOURNE-station-avalon\">0.1</td>\n  <td headers=\"tMELBOURNE-wind
+        tMELBOURNE-wind-dir tMELBOURNE-station-avalon\">SW</td>\n  <td headers=\"tMELBOURNE-wind
+        tMELBOURNE-wind-spd-kmh tMELBOURNE-station-avalon\">15</td>\n  <td headers=\"tMELBOURNE-wind
+        tMELBOURNE-wind-gust-kmh tMELBOURNE-station-avalon\">19</td>\n  <td headers=\"tMELBOURNE-wind
+        tMELBOURNE-wind-spd-kts tMELBOURNE-station-avalon\">8</td>\n  <td headers=\"tMELBOURNE-wind
+        tMELBOURNE-wind-gust-kts tMELBOURNE-station-avalon\">10</td>\n  <td headers=\"tMELBOURNE-press
+        tMELBOURNE-station-avalon\">1008.6</td>\n  <td headers=\"tMELBOURNE-rainsince9am
+        tMELBOURNE-station-avalon\">0.0</td>\n  <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-avalon\">21.4<br
+        /><small>09:54pm</small></td>\n  <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-avalon\">32.6<br
+        /><small>05:23pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir
+        tMELBOURNE-station-avalon\">SSW</td>\n  <td headers=\"tMELBOURNE-highwind
+        tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-avalon\">33<br /><small>06:48pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts tMELBOURNE-station-avalon\">18<br
+        /><small>06:48pm</small></td>\n</tr>\n<tr class=\"rowleftcolumn\">\n  <th
+        id=\"tMELBOURNE-station-cerberus\" class=\"rowleftcolumn\"><a href=\"/products/IDV60901/IDV60901.94898.shtml\">Cerberus</a></th>\n
+        \ <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-cerberus\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-cerberus\">20.9</td>\n  <td
+        headers=\"tMELBOURNE-apptmp tMELBOURNE-station-cerberus\">23.1</td>\n  <td
+        headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-cerberus\">19.2</td>\n  <td
+        headers=\"tMELBOURNE-relhum tMELBOURNE-station-cerberus\">90</td>\n  <td headers=\"tMELBOURNE-delta-t
+        tMELBOURNE-station-cerberus\">1.1</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir
+        tMELBOURNE-station-cerberus\">WSW</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh
+        tMELBOURNE-station-cerberus\">6</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh
+        tMELBOURNE-station-cerberus\">9</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts
+        tMELBOURNE-station-cerberus\">3</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts
+        tMELBOURNE-station-cerberus\">5</td>\n  <td headers=\"tMELBOURNE-press tMELBOURNE-station-cerberus\">1008.5</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-cerberus\">0.2</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-cerberus\">20.9<br /><small>10:00pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-cerberus\">28.8<br /><small>12:09pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir tMELBOURNE-station-cerberus\">SW</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-cerberus\">20<br
+        /><small>07:19pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-cerberus\">11<br /><small>07:19pm</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-coldstream\" class=\"rowleftcolumn\"><a
+        href=\"/products/IDV60901/IDV60901.94864.shtml\">Coldstream</a></th>\n  <td
+        headers=\"tMELBOURNE-datetime tMELBOURNE-station-coldstream\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-coldstream\">27.3</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-coldstream\">27.9</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-coldstream\">19.4</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-coldstream\">62</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-coldstream\">5.1</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-coldstream\">SE</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-coldstream\">15</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-coldstream\">19</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-coldstream\">8</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-coldstream\">10</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-coldstream\">1007.7</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-coldstream\">0.0</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-coldstream\">27.1<br
+        /><small>09:56pm</small></td>\n  <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-coldstream\">34.3<br
+        /><small>04:15pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir
+        tMELBOURNE-station-coldstream\">E</td>\n  <td headers=\"tMELBOURNE-highwind
+        tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-coldstream\">35<br /><small>04:40pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts tMELBOURNE-station-coldstream\">19<br
+        /><small>04:40pm</small></td>\n</tr>\n<tr class=\"contrast\">\n  <th id=\"tMELBOURNE-station-cranbourne\"
+        class=\"rowleftcolumn\"><a href=\"/products/IDV60901/IDV60901.94879.shtml\">Cranbourne</a></th>\n
+        \ <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-cranbourne\">27/09:00am</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-cranbourne\">21.9</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-cranbourne\">26.2</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-cranbourne\">21.1</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-cranbourne\">95</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-cranbourne\">0.5</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-cranbourne\">CALM</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-cranbourne\">0</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-cranbourne\">-</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-cranbourne\">0</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-cranbourne\">-</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-cranbourne\">-</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-cranbourne\">0.7</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-cranbourne\">-</td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-cranbourne\">-</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir tMELBOURNE-station-cranbourne\">-</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-cranbourne\">-</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts tMELBOURNE-station-cranbourne\">-</td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-essendon-airport\"
+        class=\"rowleftcolumn\"><a href=\"/products/IDV60901/IDV60901.95866.shtml\">Essendon
+        Airport</a></th>\n  <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-essendon-airport\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-essendon-airport\">28.1</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-essendon-airport\">29.3</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-essendon-airport\">18.2</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-essendon-airport\">55</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-essendon-airport\">6.3</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-essendon-airport\">SSE</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-essendon-airport\">9</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-essendon-airport\">13</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-essendon-airport\">5</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-essendon-airport\">7</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-essendon-airport\">1007.9</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-essendon-airport\">0.2</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-essendon-airport\">28.1<br
+        /><small>10:00pm</small></td>\n  <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-essendon-airport\">34.0<br
+        /><small>04:43pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir
+        tMELBOURNE-station-essendon-airport\">SSW</td>\n  <td headers=\"tMELBOURNE-highwind
+        tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-essendon-airport\">33<br /><small>04:49pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts tMELBOURNE-station-essendon-airport\">18<br
+        /><small>04:49pm</small></td>\n</tr>\n<tr class=\"rowleftcolumn\">\n  <th
+        id=\"tMELBOURNE-station-fawkner-beacon\" class=\"rowleftcolumn\"><a href=\"/products/IDV60901/IDV60901.95872.shtml\">Fawkner
+        Beacon</a></th>\n  <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-fawkner-beacon\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-fawkner-beacon\">-</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-fawkner-beacon\">-</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-fawkner-beacon\">-</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-fawkner-beacon\">-</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-fawkner-beacon\">-</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-fawkner-beacon\">SE</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-fawkner-beacon\">15</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-fawkner-beacon\">20</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-fawkner-beacon\">8</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-fawkner-beacon\">11</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-fawkner-beacon\">-</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-fawkner-beacon\">-</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-fawkner-beacon\">-</td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-fawkner-beacon\">-</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir tMELBOURNE-station-fawkner-beacon\">S</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-fawkner-beacon\">32<br
+        /><small>05:57pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-fawkner-beacon\">17<br /><small>05:57pm</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-ferny-creek\" class=\"rowleftcolumn\"><a
+        href=\"/products/IDV60901/IDV60901.94872.shtml\">Ferny Creek</a></th>\n  <td
+        headers=\"tMELBOURNE-datetime tMELBOURNE-station-ferny-creek\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-ferny-creek\">24.2</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-ferny-creek\">25.7</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-ferny-creek\">17.7</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-ferny-creek\">67</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-ferny-creek\">4.1</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-ferny-creek\">E</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-ferny-creek\">6</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-ferny-creek\">9</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-ferny-creek\">3</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-ferny-creek\">5</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-ferny-creek\">1009.8</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-ferny-creek\">0.0</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-ferny-creek\">24.2<br
+        /><small>10:00pm</small></td>\n  <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-ferny-creek\">31.0<br
+        /><small>04:03pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir
+        tMELBOURNE-station-ferny-creek\">ENE</td>\n  <td headers=\"tMELBOURNE-highwind
+        tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-ferny-creek\">28<br /><small>01:05am</small></td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts tMELBOURNE-station-ferny-creek\">15<br
+        /><small>01:05am</small></td>\n</tr>\n<tr class=\"rowleftcolumn\">\n  <th
+        id=\"tMELBOURNE-station-frankston\" class=\"rowleftcolumn\"><a href=\"/products/IDV60901/IDV60901.94871.shtml\">Frankston</a></th>\n
+        \ <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-frankston\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-frankston\">25.6</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-frankston\">27.3</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-frankston\">20.2</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-frankston\">72</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-frankston\">3.5</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-frankston\">SE</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-frankston\">11</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-frankston\">20</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-frankston\">6</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-frankston\">11</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-frankston\">-</td>\n  <td
+        headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-frankston\">-</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-frankston\">25.1<br /><small>09:29pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-frankston\">32.4<br
+        /><small>05:08pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir
+        tMELBOURNE-station-frankston\">SSE</td>\n  <td headers=\"tMELBOURNE-highwind
+        tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-frankston\">28<br /><small>07:34pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts tMELBOURNE-station-frankston\">15<br
+        /><small>07:34pm</small></td>\n</tr>\n<tr class=\"rowleftcolumn\">\n  <th
+        id=\"tMELBOURNE-station-geelong-racecourse\" class=\"rowleftcolumn\"><a href=\"/products/IDV60901/IDV60901.94857.shtml\">Geelong
+        Racecourse</a></th>\n  <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-geelong-racecourse\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-geelong-racecourse\">20.9</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-geelong-racecourse\">22.2</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-geelong-racecourse\">20.2</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-geelong-racecourse\">96</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-geelong-racecourse\">0.4</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-geelong-racecourse\">S</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-geelong-racecourse\">13</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-geelong-racecourse\">19</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-geelong-racecourse\">7</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-geelong-racecourse\">10</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-geelong-racecourse\">1008.8</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-geelong-racecourse\">0.0</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-geelong-racecourse\">20.8<br
+        /><small>09:16pm</small></td>\n  <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-geelong-racecourse\">31.8<br
+        /><small>03:33pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir
+        tMELBOURNE-station-geelong-racecourse\">S</td>\n  <td headers=\"tMELBOURNE-highwind
+        tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-geelong-racecourse\">32<br
+        /><small>04:39pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-geelong-racecourse\">17<br /><small>04:39pm</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-laverton\" class=\"rowleftcolumn\"><a
+        href=\"/products/IDV60901/IDV60901.94865.shtml\">Laverton</a></th>\n  <td
+        headers=\"tMELBOURNE-datetime tMELBOURNE-station-laverton\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-laverton\">24.6</td>\n  <td
+        headers=\"tMELBOURNE-apptmp tMELBOURNE-station-laverton\">26.1</td>\n  <td
+        headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-laverton\">20.5</td>\n  <td
+        headers=\"tMELBOURNE-relhum tMELBOURNE-station-laverton\">78</td>\n  <td headers=\"tMELBOURNE-delta-t
+        tMELBOURNE-station-laverton\">2.7</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir
+        tMELBOURNE-station-laverton\">SW</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh
+        tMELBOURNE-station-laverton\">13</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh
+        tMELBOURNE-station-laverton\">19</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts
+        tMELBOURNE-station-laverton\">7</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts
+        tMELBOURNE-station-laverton\">10</td>\n  <td headers=\"tMELBOURNE-press tMELBOURNE-station-laverton\">1008.2</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-laverton\">0.0</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-laverton\">24.6<br /><small>10:00pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-laverton\">31.9<br /><small>04:46pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir tMELBOURNE-station-laverton\">SSE</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-laverton\">32<br
+        /><small>05:52pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-laverton\">17<br /><small>05:52pm</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-moorabbin-airport\"
+        class=\"rowleftcolumn\"><a href=\"/products/IDV60901/IDV60901.94870.shtml\">Moorabbin
+        Airport</a></th>\n  <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-moorabbin-airport\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-moorabbin-airport\">25.7</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-moorabbin-airport\">27.7</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-moorabbin-airport\">20.0</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-moorabbin-airport\">71</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-moorabbin-airport\">3.7</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-moorabbin-airport\">SE</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-moorabbin-airport\">9</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-moorabbin-airport\">11</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-moorabbin-airport\">5</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-moorabbin-airport\">6</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-moorabbin-airport\">1007.9</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-moorabbin-airport\">0.0</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-moorabbin-airport\">25.6<br
+        /><small>09:52pm</small></td>\n  <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-moorabbin-airport\">32.8<br
+        /><small>06:04pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir
+        tMELBOURNE-station-moorabbin-airport\">SE</td>\n  <td headers=\"tMELBOURNE-highwind
+        tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-moorabbin-airport\">33<br
+        /><small>06:56pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-moorabbin-airport\">18<br /><small>06:56pm</small></td>\n</tr>\n<tr
+        class=\"contrast\">\n  <th id=\"tMELBOURNE-station-phillip-island\" class=\"rowleftcolumn\"><a
+        href=\"/products/IDV60901/IDV60901.94883.shtml\">Phillip Island</a></th>\n
+        \ <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-phillip-island\">27/03:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-phillip-island\">23.0</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-phillip-island\">26.6</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-phillip-island\">23.0</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-phillip-island\">100</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-phillip-island\">0.0</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-phillip-island\">SE</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-phillip-island\">9</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-phillip-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-phillip-island\">5</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-phillip-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-phillip-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-phillip-island\">0.0</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-phillip-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-phillip-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir tMELBOURNE-station-phillip-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-phillip-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts tMELBOURNE-station-phillip-island\">-</td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-point-wilson\" class=\"rowleftcolumn\"><a
+        href=\"/products/IDV60901/IDV60901.94847.shtml\">Point Wilson</a></th>\n  <td
+        headers=\"tMELBOURNE-datetime tMELBOURNE-station-point-wilson\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-point-wilson\">-</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-point-wilson\">-</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-point-wilson\">-</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-point-wilson\">-</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-point-wilson\">-</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-point-wilson\">SSW</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-point-wilson\">17</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-point-wilson\">19</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-point-wilson\">9</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-point-wilson\">10</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-point-wilson\">-</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-point-wilson\">-</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-point-wilson\">-</td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-point-wilson\">-</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir tMELBOURNE-station-point-wilson\">SSW</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-point-wilson\">30<br
+        /><small>01:29am</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-point-wilson\">16<br /><small>01:29am</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-rhyll\" class=\"rowleftcolumn\"><a
+        href=\"/products/IDV60901/IDV60901.94892.shtml\">Rhyll</a></th>\n  <td headers=\"tMELBOURNE-datetime
+        tMELBOURNE-station-rhyll\">27/10:00pm</td>\n  <td headers=\"tMELBOURNE-tmp
+        tMELBOURNE-station-rhyll\">22.9</td>\n  <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-rhyll\">25.7</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-rhyll\">20.8</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-rhyll\">88</td>\n  <td
+        headers=\"tMELBOURNE-delta-t tMELBOURNE-station-rhyll\">1.4</td>\n  <td headers=\"tMELBOURNE-wind
+        tMELBOURNE-wind-dir tMELBOURNE-station-rhyll\">SSW</td>\n  <td headers=\"tMELBOURNE-wind
+        tMELBOURNE-wind-spd-kmh tMELBOURNE-station-rhyll\">7</td>\n  <td headers=\"tMELBOURNE-wind
+        tMELBOURNE-wind-gust-kmh tMELBOURNE-station-rhyll\">9</td>\n  <td headers=\"tMELBOURNE-wind
+        tMELBOURNE-wind-spd-kts tMELBOURNE-station-rhyll\">4</td>\n  <td headers=\"tMELBOURNE-wind
+        tMELBOURNE-wind-gust-kts tMELBOURNE-station-rhyll\">5</td>\n  <td headers=\"tMELBOURNE-press
+        tMELBOURNE-station-rhyll\">1008.2</td>\n  <td headers=\"tMELBOURNE-rainsince9am
+        tMELBOURNE-station-rhyll\">0.0</td>\n  <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-rhyll\">22.6<br
+        /><small>09:27pm</small></td>\n  <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-rhyll\">28.5<br
+        /><small>03:38pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir
+        tMELBOURNE-station-rhyll\">SE</td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh
+        tMELBOURNE-station-rhyll\">24<br /><small>06:37am</small></td>\n  <td headers=\"tMELBOURNE-highwind
+        tMELBOURNE-highwind-gust-kts tMELBOURNE-station-rhyll\">13<br /><small>06:37am</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-scoresby\" class=\"rowleftcolumn\"><a
+        href=\"/products/IDV60901/IDV60901.95867.shtml\">Scoresby</a></th>\n  <td
+        headers=\"tMELBOURNE-datetime tMELBOURNE-station-scoresby\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-scoresby\">27.3</td>\n  <td
+        headers=\"tMELBOURNE-apptmp tMELBOURNE-station-scoresby\">29.4</td>\n  <td
+        headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-scoresby\">19.4</td>\n  <td
+        headers=\"tMELBOURNE-relhum tMELBOURNE-station-scoresby\">62</td>\n  <td headers=\"tMELBOURNE-delta-t
+        tMELBOURNE-station-scoresby\">5.1</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir
+        tMELBOURNE-station-scoresby\">SSE</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh
+        tMELBOURNE-station-scoresby\">7</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh
+        tMELBOURNE-station-scoresby\">13</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts
+        tMELBOURNE-station-scoresby\">4</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts
+        tMELBOURNE-station-scoresby\">7</td>\n  <td headers=\"tMELBOURNE-press tMELBOURNE-station-scoresby\">-</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-scoresby\">0.2</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-scoresby\">27.3<br /><small>10:00pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-scoresby\">34.6<br /><small>02:58pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir tMELBOURNE-station-scoresby\">SSE</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-scoresby\">28<br
+        /><small>06:51pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-scoresby\">15<br /><small>06:51pm</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-sheoaks\" class=\"rowleftcolumn\"><a
+        href=\"/products/IDV60901/IDV60901.94863.shtml\">Sheoaks</a></th>\n  <td headers=\"tMELBOURNE-datetime
+        tMELBOURNE-station-sheoaks\">27/10:00pm</td>\n  <td headers=\"tMELBOURNE-tmp
+        tMELBOURNE-station-sheoaks\">22.2</td>\n  <td headers=\"tMELBOURNE-apptmp
+        tMELBOURNE-station-sheoaks\">24.3</td>\n  <td headers=\"tMELBOURNE-dewpoint
+        tMELBOURNE-station-sheoaks\">18.2</td>\n  <td headers=\"tMELBOURNE-relhum
+        tMELBOURNE-station-sheoaks\">78</td>\n  <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-sheoaks\">2.5</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-sheoaks\">E</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-sheoaks\">4</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-sheoaks\">6</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-sheoaks\">2</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-sheoaks\">3</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-sheoaks\">1009.0</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-sheoaks\">0.0</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-sheoaks\">22.1<br /><small>09:56pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-sheoaks\">33.0<br /><small>02:59pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir tMELBOURNE-station-sheoaks\">SE</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-sheoaks\">33<br
+        /><small>06:01pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-sheoaks\">18<br /><small>06:01pm</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-south-channel-island\"
+        class=\"rowleftcolumn\"><a href=\"/products/IDV60901/IDV60901.94853.shtml\">South
+        Channel Island</a></th>\n  <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-south-channel-island\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-south-channel-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-south-channel-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-south-channel-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-south-channel-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-south-channel-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-south-channel-island\">SE</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-south-channel-island\">9</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-south-channel-island\">13</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-south-channel-island\">5</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-south-channel-island\">7</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-south-channel-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-south-channel-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-south-channel-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-south-channel-island\">-</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir tMELBOURNE-station-south-channel-island\">S</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-south-channel-island\">33<br
+        /><small>05:01pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-south-channel-island\">18<br /><small>05:01pm</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-st-kilda-harbour-rmys\"
+        class=\"rowleftcolumn\"><a href=\"/products/IDV60901/IDV60901.95864.shtml\">St
+        Kilda Harbour RMYS</a></th>\n  <td headers=\"tMELBOURNE-datetime tMELBOURNE-station-st-kilda-harbour-rmys\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-st-kilda-harbour-rmys\">-</td>\n
+        \ <td headers=\"tMELBOURNE-apptmp tMELBOURNE-station-st-kilda-harbour-rmys\">-</td>\n
+        \ <td headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-st-kilda-harbour-rmys\">-</td>\n
+        \ <td headers=\"tMELBOURNE-relhum tMELBOURNE-station-st-kilda-harbour-rmys\">-</td>\n
+        \ <td headers=\"tMELBOURNE-delta-t tMELBOURNE-station-st-kilda-harbour-rmys\">-</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir tMELBOURNE-station-st-kilda-harbour-rmys\">SE</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh tMELBOURNE-station-st-kilda-harbour-rmys\">6</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh tMELBOURNE-station-st-kilda-harbour-rmys\">6</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts tMELBOURNE-station-st-kilda-harbour-rmys\">3</td>\n
+        \ <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts tMELBOURNE-station-st-kilda-harbour-rmys\">3</td>\n
+        \ <td headers=\"tMELBOURNE-press tMELBOURNE-station-st-kilda-harbour-rmys\">-</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-st-kilda-harbour-rmys\">-</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-st-kilda-harbour-rmys\">-</td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-st-kilda-harbour-rmys\">-</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir tMELBOURNE-station-st-kilda-harbour-rmys\">SE</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-st-kilda-harbour-rmys\">33<br
+        /><small>08:00pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-st-kilda-harbour-rmys\">18<br /><small>08:00pm</small></td>\n</tr>\n<tr
+        class=\"rowleftcolumn\">\n  <th id=\"tMELBOURNE-station-viewbank\" class=\"rowleftcolumn\"><a
+        href=\"/products/IDV60901/IDV60901.95874.shtml\">Viewbank</a></th>\n  <td
+        headers=\"tMELBOURNE-datetime tMELBOURNE-station-viewbank\">27/10:00pm</td>\n
+        \ <td headers=\"tMELBOURNE-tmp tMELBOURNE-station-viewbank\">28.4</td>\n  <td
+        headers=\"tMELBOURNE-apptmp tMELBOURNE-station-viewbank\">30.4</td>\n  <td
+        headers=\"tMELBOURNE-dewpoint tMELBOURNE-station-viewbank\">19.1</td>\n  <td
+        headers=\"tMELBOURNE-relhum tMELBOURNE-station-viewbank\">57</td>\n  <td headers=\"tMELBOURNE-delta-t
+        tMELBOURNE-station-viewbank\">6.0</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-dir
+        tMELBOURNE-station-viewbank\">SSE</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kmh
+        tMELBOURNE-station-viewbank\">7</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kmh
+        tMELBOURNE-station-viewbank\">13</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-spd-kts
+        tMELBOURNE-station-viewbank\">4</td>\n  <td headers=\"tMELBOURNE-wind tMELBOURNE-wind-gust-kts
+        tMELBOURNE-station-viewbank\">7</td>\n  <td headers=\"tMELBOURNE-press tMELBOURNE-station-viewbank\">1007.6</td>\n
+        \ <td headers=\"tMELBOURNE-rainsince9am tMELBOURNE-station-viewbank\">0.0</td>\n
+        \ <td headers=\"tMELBOURNE-lowtmp tMELBOURNE-station-viewbank\">28.4<br /><small>10:00pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-hightmp tMELBOURNE-station-viewbank\">35.3<br /><small>05:16pm</small></td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-dir tMELBOURNE-station-viewbank\">SSE</td>\n
+        \ <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kmh tMELBOURNE-station-viewbank\">28<br
+        /><small>07:20pm</small></td>\n  <td headers=\"tMELBOURNE-highwind tMELBOURNE-highwind-gust-kts
+        tMELBOURNE-station-viewbank\">15<br /><small>07:20pm</small></td>\n</tr>\n</tbody>
+        <!-- abcd close product tbody for this division -->\n</table> <!-- ABCD close
+        product table for this division -->\n<!-- station information for state/territory
+        output -->\n<div class=\"noPrint\">\n        \n</div>\n\n<p class=\"noPrint\">\n<strong>Latest
+        Capital City Observations:</strong>\n  <a href=\"/products/IDN60902.shtml\"
+        title=\"Canberra - Latest Capital City Observations\">Canberra</a>\n| <a href=\"/products/IDN60900.shtml\"
+        title=\"Sydney - Latest Capital City Observations\">Sydney</a>\n| <a href=\"/products/IDV60900.shtml\"
+        title=\"Melbourne - Latest Capital City Observations\">Melbourne</a>\n| <a
+        href=\"/products/IDQ60900.shtml\" title=\"Brisbane - Latest Capital City Observations\">Brisbane</a>\n|
+        <a href=\"/products/IDS60900.shtml\" title=\"Adelaide - Latest Capital City
+        Observations\">Adelaide</a>\n| <a href=\"/products/IDW60900.shtml\" title=\"Perth
+        - Latest Capital City Observations\">Perth</a>\n| <a href=\"/products/IDT60900.shtml\"
+        title=\"Hobart - Latest Capital City Observations\">Hobart</a>\n| <a href=\"/products/IDD60900.shtml\"
+        title=\"Darwin - Latest Capital City Observations\">Darwin</a>\n</p>\n\n<p
+        class=\"noPrint\">\n</p>\n\n</div><!-- End: Content --></div>\n<!-- End: Container
+        -->\n<!-- Begin: Left Column -->\n    <div id=\"left-column\"></div>\n<!--
+        End: Left Column -->\n\n<div class=\"clr\"><!-- clear columns --></div>\n</div>\n<!--
+        End: Columns -->\n</div>\n<!-- End: pagewrap -->\n<!-- Start: Footer -->\n<div
+        id=\"footer\">\n    <div id=\"footer-columns\">\n        <ul id=\"fc-one\">\n
+        \           <li class=\"icon-link border-bottom uppercase\"><a href=\"/australia/warnings/?ref=ftr\"
+        id=\"icon-link-warnings\"><span>Warnings</span></a></li>\n            <li
+        class=\"row-link-first uppercase\"><a href=\"/water/?ref=ftr\">Water</a></li>\n
+        \           <li class=\"row-link uppercase\"><a href=\"/climate/?ref=ftr\">Climate</a></li>\n
+        \           <li class=\"row-link uppercase\"><a href=\"/environment/?ref=ftr\">Environment</a></li>\n
+        \           <li class=\"border-top\"><a href=\"/cyclone/?ref=ftr\">Tropical
+        Cyclones</a></li>\n            <li><a href=\"/tsunami/?ref=ftr\">Tsunami Warning
+        Centre</a></li>\n            <li><a href=\"/watl/?ref=ftr\">Agriculture -
+        Water and the Land</a></li>\n            <li><a href=\"/marine/?ref=ftr\">Marine
+        &amp; Ocean</a></li>\n            <li><a href=\"/uv/?ref=ftr\">UV &amp; Sun
+        Protection</a></li>\n            <li><a href=\"/australia/flood/?ref=ftr\">Rainfall
+        &amp; River Conditions</a></li>\n        </ul>\n        <ul id=\"fc-two\">\n
+        \           <li class=\"imagebox-links\">\n                <h3 class=\"hidden\">Graphical
+        Views</h3>\n                <ul>\n                    <li class=\"first\"><a
+        href=\"/australia/radar/?ref=ftr\" id=\"imagebox-link-radar\">Radar</a></li>\n
+        \                   <li><a href=\"/australia/satellite/?ref=ftr\" id=\"imagebox-link-sat\">Sat</a></li>\n
+        \                   <li><a href=\"/australia/charts/?ref=ftr\" id=\"imagebox-link-maps\">Maps</a></li>\n
+        \               </ul>\n            </li>\n            <li><a href=\"/jsp/watl/rainfall/pme.jsp?ref=ftr\">Rainfall
+        Forecasts</a></li>\n            <li><a href=\"/climate/ahead/?ref=ftr\">Seasonal
+        Outlooks</a></li>\n            <li><a href=\"/climate/change/?ref=ftr\">Climate
+        Variability &amp; Change</a></li>\n            <li><a href=\"/climate/data/?ref=ftr\">Climate
+        Data Online</a></li>\n            <li><a href=\"/water/ssf/?ref=ftr\">Seasonal
+        Streamflow Forecasts</a></li>\n            <li><a href=\"/water/dashboards/#/water-storages/summary/state\">Water
+        Storage</a></li>\n        </ul>\n        <ul id=\"fc-three\">\n            <li
+        class=\"icon-link border-bottom\"><a href=\"/australia/meteye?ref=ftr\" id=\"icon-link-fe\"><span>MetEye&trade;</span></a></li>\n
+        \           <li><a href=\"/weather-services/?ref=ftr\">National Weather Services</a></li>\n
+        \           <li><a href=\"/aviation/?ref=ftr\">Aviation Weather Services</a></li>\n
+        \           <li><a href=\"/defence/?ref=ftr\">Defence Services</a></li>\n
+        \           <li><a href=\"http://www.sws.bom.gov.au/?ref=ftr\">Space Weather
+        Services</a></li>\n            <li><a href=\"/reguser/?ref=ftr\">Registered
+        User Services</a></li>\n            <li><a href=\"/business-solutions/industry-solutions.shtml?ref=ftr\">Industry
+        Solutions</a></li>\n            <li><a href=\"/sep/?ref=ftr\">Supplier Entry
+        Point</a></li>\n        </ul>\n        <ul id=\"fc-four\">\n            <li
+        class=\"icon-link row-link-1st row-double\"><a href=\"http://www.facebook.com/bureauofmeteorology\"
+        id=\"icon-link-fb\"><span>Facebook</span></a></li>\n            <li class=\"icon-link
+        row-link-2nd\"><a id=\"icon-link-tw\" href=\"http://media.bom.gov.au/social-media/\"><span>Twitter</span></a></li>\n
+        \           <li class=\"icon-link row-link-1st\"><a href=\"http://www.youtube.com/user/BureauOfMeteorology\"
+        id=\"icon-link-yt\"><span>Youtube</span></a></li>\n            <li class=\"icon-link
+        row-link-2nd\"><a href=\"http://media.bom.gov.au/social?ref=ftr\" id=\"icon-link-bl\"><span>Blog</span></a></li>\n
+        \           <li class=\"icon-link row-link-1st border-bottom\"><a href=\"https://plus.google.com/103437906374218799167\"
+        id=\"icon-link-gp\"><span>Google+</span></a></li>\n            <li class=\"icon-link
+        row-link-2nd border-bottom\"><a href=\"http://www.bom.gov.au/rss/?ref=ftr\"
+        id=\"icon-link-rss\"><span>RSS</span></a></li>\n            <li class=\"row-link-first\"><a
+        href=\"/careers/?ref=ftr\">Careers</a></li>\n            <li class=\"row-link\"><a
+        href=\"/site-map/?ref=ftr\">Sitemap</a></li>\n            <li class=\"row-link\"><a
+        href=\"/other/feedback/?ref=ftr\">Feedback</a></li>\n            <li class=\"border-top\"><a
+        href=\"/foi/?ref=ftr\">Freedom of Information</a></li>\n            <li><a
+        href=\"/iwk/?ref=ftr\">Indigenous Weather Knowledge</a></li>\n            <li><a
+        href=\"/lam/glossary/?ref=ftr\">Glossary</a></li>\n        </ul>\n        <p
+        id=\"timestamp\">This page was created at <strong>11:07 on Saturday 27 January
+        2018 (UTC)</strong></p>\n        <p id=\"copyright\">&#169; <a href=\"/other/copyright.shtml?ref=ftr\">Copyright</a>
+        Commonwealth of Australia 2018, Bureau of Meteorology (ABN 92 637 533 532)
+        | <a href=\"/other/disclaimer.shtml?ref=ftr\">Disclaimer</a> | <a href=\"/other/privacy.shtml?ref=ftr\">Privacy</a>
+        | <a href=\"/other/accessibility.shtml?ref=ftr\">Accessibility</a></p>\n    </div>\n</div>\n<!--
+        End: Footer -->\n</div>\n<!-- End: PageHeight -->\n\n<script src=\"/includes/analytics.js\"
+        type=\"text/javascript\"></script>\n\n  </body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 27 Jan 2018 11:07:31 GMT
+recorded_with: VCR 4.0.0
