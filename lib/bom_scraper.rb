@@ -4,9 +4,9 @@ require 'open-uri'
 URL = 'http://www.bom.gov.au/vic/observations/melbourne.shtml'
 
 module BomScraper
-  def self.generate_readings
+  def self.parse_url
     doc = Nokogiri::HTML(open(URL))
-    output_hash = {}
+    output_hash = { }
 
     doc.css('tbody tr').each do |location|
       name = location.children[1].text
@@ -17,12 +17,14 @@ module BomScraper
       wind_direction = location.children[15].text
       rainfall_amount = location.children[27].text
 
-      output_hash[name] = {time: time,
-                           temperature: temperature,
-                           dew_point: dew_point,
-                           wind_speed: wind_speed,
-                           wind_direction: wind_direction,
-                           rainfall_amount: rainfall_amount}
+      output_hash[name] = {
+                             time: time,
+                             temperature: temperature,
+                             dew_point: dew_point,
+                             wind_speed: wind_speed,
+                             wind_direction: wind_direction,
+                             rainfall_amount: rainfall_amount
+                           }
 
     end
 

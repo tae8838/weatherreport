@@ -1,5 +1,17 @@
 %h1 Welcome to weather scraper!
-
-
-= @weather_stations.each do |weather_station|
-  %td= weather_station.id
+%table
+  %th Location
+  %th Rainfall Intensity (mm/hour)
+  %th Temperature (Degree Celsius)
+  %th Dew Point (Degree Celsius)
+  %th Wind Speed (km/h)
+  %th Wind Direction (degrees)
+  - @weather_stations.each do |weather_station|
+    %tr
+      - reading = weather_station.readings.last
+      %td= weather_station.name
+      %td= reading.rainfall_amount
+      %td= reading.temperature
+      %td= reading.dew_point
+      %td= reading.wind_speed
+      %td= reading.wind_direction
