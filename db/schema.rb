@@ -10,9 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20180127092839) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "readings", force: :cascade do |t|
+    t.bigint "weather_station_id"
+    t.date "day"
+    t.datetime "time"
+    t.decimal "rainfall_amount"
+    t.decimal "temperature"
+    t.decimal "dew_point"
+    t.decimal "wind_speed"
+    t.string "wind_direction"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["weather_station_id"], name: "index_readings_on_weather_station_id"
+  end
+
+  create_table "weather_stations", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
