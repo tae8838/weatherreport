@@ -1,11 +1,9 @@
 require 'nokogiri'
 require 'open-uri'
 
-URL = 'http://www.bom.gov.au/vic/observations/melbourne.shtml'
-
 module BomScraper
-  def self.parse_url
-    doc = Nokogiri::HTML(open(URL))
+  def self.update_weather_stations(url = 'http://www.bom.gov.au/vic/observations/melbourne.shtml')
+    doc = Nokogiri::HTML(open(url))
     output_hash = { }
 
     doc.css('tbody tr').each do |location|
@@ -17,14 +15,15 @@ module BomScraper
       wind_direction = location.children[15].text
       rainfall_amount = location.children[27].text
 
-      output_hash[name] = {
-                             time: time,
-                             temperature: temperature,
-                             dew_point: dew_point,
-                             wind_speed: wind_speed,
-                             wind_direction: wind_direction,
-                             rainfall_amount: rainfall_amount
-                           }
+      weather_station = WeatherStation.find_or_create_by(name: name)
+
+      weather_station.readings.create!({time: time,
+                                        temperature: temperature,
+                                        dew_point: dew_point,
+                                        wind_speed: wind_speed,
+                                        wind_direction: wind_direction,
+                                        rainfall_amount: rainfall_amount})
+
 
     end
 

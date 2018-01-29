@@ -6,6 +6,7 @@
   %th Dew Point (Degree Celsius)
   %th Wind Speed (km/h)
   %th Wind Direction (degrees)
+  %th Time Read (UTC)
   - @weather_stations.each do |weather_station|
     %tr
       - reading = weather_station.readings.last
@@ -15,6 +16,7 @@
       %td= reading.dew_point
       %td= reading.wind_speed
       %td= reading.wind_direction
+      %td= reading.created_at.strftime("%Y-%m-%d %H:%M:%S")
 
 %br
 %span data obtained from:
