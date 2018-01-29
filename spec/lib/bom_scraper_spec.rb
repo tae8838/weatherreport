@@ -2,10 +2,19 @@ require 'rails_helper'
 
 describe BomScraper do
   it 'scrapes BOM website successfully' do
-    output = VCR.use_cassette('generate_readings') { described_class.generate_readings }
+    expect(WeatherStation.count).to eq 0
 
-    expected_output = {"Melbourne (Olympic Park)"=>{:time=>"10:00pm", :temperature=>"28.3", :dew_point=>"19.5", :wind_speed=>"4", :wind_direction=>"SSE", :rainfall_amount=>"0.0"}, "Melbourne Airport"=>{:time=>"10:00pm", :temperature=>"25.6", :dew_point=>"19.3", :wind_speed=>"9", :wind_direction=>"SW", :rainfall_amount=>"0.0"}, "Avalon"=>{:time=>"10:00pm", :temperature=>"21.5", :dew_point=>"21.3", :wind_speed=>"15", :wind_direction=>"SW", :rainfall_amount=>"0.0"}, "Cerberus"=>{:time=>"10:00pm", :temperature=>"20.9", :dew_point=>"19.2", :wind_speed=>"6", :wind_direction=>"WSW", :rainfall_amount=>"0.2"}, "Coldstream"=>{:time=>"10:00pm", :temperature=>"27.3", :dew_point=>"19.4", :wind_speed=>"15", :wind_direction=>"SE", :rainfall_amount=>"0.0"}, "Cranbourne"=>{:time=>"09:00am", :temperature=>"21.9", :dew_point=>"21.1", :wind_speed=>"0", :wind_direction=>"CALM", :rainfall_amount=>"0.7"}, "Essendon Airport"=>{:time=>"10:00pm", :temperature=>"28.1", :dew_point=>"18.2", :wind_speed=>"9", :wind_direction=>"SSE", :rainfall_amount=>"0.2"}, "Fawkner Beacon"=>{:time=>"10:00pm", :temperature=>"-", :dew_point=>"-", :wind_speed=>"15", :wind_direction=>"SE", :rainfall_amount=>"-"}, "Ferny Creek"=>{:time=>"10:00pm", :temperature=>"24.2", :dew_point=>"17.7", :wind_speed=>"6", :wind_direction=>"E", :rainfall_amount=>"0.0"}, "Frankston"=>{:time=>"10:00pm", :temperature=>"25.6", :dew_point=>"20.2", :wind_speed=>"11", :wind_direction=>"SE", :rainfall_amount=>"-"}, "Geelong Racecourse"=>{:time=>"10:00pm", :temperature=>"20.9", :dew_point=>"20.2", :wind_speed=>"13", :wind_direction=>"S", :rainfall_amount=>"0.0"}, "Laverton"=>{:time=>"10:00pm", :temperature=>"24.6", :dew_point=>"20.5", :wind_speed=>"13", :wind_direction=>"SW", :rainfall_amount=>"0.0"}, "Moorabbin Airport"=>{:time=>"10:00pm", :temperature=>"25.7", :dew_point=>"20.0", :wind_speed=>"9", :wind_direction=>"SE", :rainfall_amount=>"0.0"}, "Phillip Island"=>{:time=>"03:00pm", :temperature=>"23.0", :dew_point=>"23.0", :wind_speed=>"9", :wind_direction=>"SE", :rainfall_amount=>"0.0"}, "Point Wilson"=>{:time=>"10:00pm", :temperature=>"-", :dew_point=>"-", :wind_speed=>"17", :wind_direction=>"SSW", :rainfall_amount=>"-"}, "Rhyll"=>{:time=>"10:00pm", :temperature=>"22.9", :dew_point=>"20.8", :wind_speed=>"7", :wind_direction=>"SSW", :rainfall_amount=>"0.0"}, "Scoresby"=>{:time=>"10:00pm", :temperature=>"27.3", :dew_point=>"19.4", :wind_speed=>"7", :wind_direction=>"SSE", :rainfall_amount=>"0.2"}, "Sheoaks"=>{:time=>"10:00pm", :temperature=>"22.2", :dew_point=>"18.2", :wind_speed=>"4", :wind_direction=>"E", :rainfall_amount=>"0.0"}, "South Channel Island"=>{:time=>"10:00pm", :temperature=>"-", :dew_point=>"-", :wind_speed=>"9", :wind_direction=>"SE", :rainfall_amount=>"-"}, "St Kilda Harbour RMYS"=>{:time=>"10:00pm", :temperature=>"-", :dew_point=>"-", :wind_speed=>"6", :wind_direction=>"SE", :rainfall_amount=>"-"}, "Viewbank"=>{:time=>"10:00pm", :temperature=>"28.4", :dew_point=>"19.1", :wind_speed=>"7", :wind_direction=>"SSE", :rainfall_amount=>"0.0"}}
+    output = VCR.use_cassette('update_weather_stations') { described_class.update_weather_stations }
 
-    expect(output).to eq expected_output
+    expect(WeatherStation.count).to eq 21
+
+    weather_station = WeatherStation.find_by(name: 'Avalon')
+    reading = weather_station.readings.first
+
+    expect(reading.rainfall_amount).to eq 0
+    expect(reading.temperature).to eq 21.5
+    expect(reading.dew_point).to eq 21.3
+    expect(reading.wind_speed).to eq 15
+    expect(reading.wind_direction).to eq 'SW'
   end
 end
