@@ -58,15 +58,22 @@ var url = new Vue({
   el: '#url',
   methods: {
     changeData: function (event) {
+      console.log(event)
       $.ajax({
         type: "GET",
-        url: "/weather_stations/test/" + event.srcElement.value,
+        url: "/weather_stations/test/" + event.srcElement.selectedOptions[0].text,
         success: function(res) {
-          console.log("/weather_stations/test/" + event.srcElement.value)
           weather_stations.weather_stations = res;
-          console.log(weather_stations)
+          link.link = event.srcElement.value;
         }
       });
     }
+  }
+})
+
+var link = new Vue({
+  el: '#link',
+  data: {
+    link: "http://www.bom.gov.au/vic/observations/melbourne.shtml"
   }
 })
