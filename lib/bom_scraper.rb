@@ -2,7 +2,11 @@ require 'nokogiri'
 require 'open-uri'
 
 module BomScraper
-  def self.update_weather_stations(url = 'http://www.bom.gov.au/vic/observations/melbourne.shtml')
+  def self.update_weather_stations(state = 'VIC')
+    weather_station = WeatherStation.find_by(state: state)
+    last_reading = weather_station.readings.last unless weather_station.nil?
+    return if (Time.now - last_reading.created_at) < 10.minutes unless last_reading.nil?
+    url = URL_TO_SCRAPE[state]
     doc = Nokogiri::HTML(open(url))
     output_hash = { }
 
@@ -15,7 +19,8 @@ module BomScraper
       wind_direction = location.children[15].text
       rainfall_amount = location.children[27].text
 
-      weather_station = WeatherStation.find_or_create_by(name: name)
+
+      weather_station = WeatherStation.find_or_create_by(name: name, state: state)
 
       weather_station.readings.create!({time: time,
                                         temperature: temperature,
