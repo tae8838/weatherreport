@@ -3,6 +3,9 @@ require 'open-uri'
 
 module BomScraper
   def self.update_weather_stations(state = 'VIC')
+    weather_station = WeatherStation.find_by(state: state)
+    last_reading = weather_station.readings.last unless weather_station.nil?
+    return if (Time.now - last_reading.created_at) < 10.minutes unless last_reading.nil?
     url = URL_TO_SCRAPE[state]
     doc = Nokogiri::HTML(open(url))
     output_hash = { }
