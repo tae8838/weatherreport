@@ -1,22 +1,35 @@
+%script{ type: 'text/x-template', id: 'weather_station-row' }
+  %tr
+    %td {{ weather_station.name }}
+    %td {{ weather_station.reading.rainfall_amount }}
+    %td {{ weather_station.reading.temperature }}
+    %td {{ weather_station.reading.dew_point }}
+    %td {{ weather_station.reading.wind_speed }}
+    %td {{ weather_station.reading.wind_direction }}
+
+
+
 %h1 Welcome to weather scraper!
-%table
-  %th Location
-  %th Rainfall Intensity (mm/hour)
-  %th Temperature (Degree Celsius)
-  %th Dew Point (Degree Celsius)
-  %th Wind Speed (km/h)
-  %th Wind Direction (degrees)
-  %th Time Read (UTC)
-  - @weather_stations.each do |weather_station|
-    %tr
-      - reading = weather_station.readings.last
-      %td= weather_station.name
-      %td= reading.rainfall_amount
-      %td= reading.temperature
-      %td= reading.dew_point
-      %td= reading.wind_speed
-      %td= reading.wind_direction
-      %td= reading.created_at.strftime("%Y-%m-%d %H:%M:%S")
+%div#weather_stations
+  %table
+    %thead
+      %tr
+        %th Location
+        %th Rainfall Intensity (mm/hour)
+        %th Temperature (Degree Celsius)
+        %th Dew Point (Degree Celsius)
+        %th Wind Speed (km/h)
+        %th Wind Direction (degrees)
+        %th Time Read (UTC)
+    %tbody
+      %tr{ 'v-for': "weather_station in weather_stations" }
+        %td {{ weather_station.name }}
+        %td {{ weather_station.reading.rainfall_amount }}
+        %td {{ weather_station.reading.temperature }}
+        %td {{ weather_station.reading.dew_point }}
+        %td {{ weather_station.reading.wind_speed }}
+        %td {{ weather_station.reading.wind_direction }}
+        %td {{ weather_station.reading.created_at }}
 
 %br
 %span data obtained from:

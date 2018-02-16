@@ -9,7 +9,38 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
 //= require vue
-//= require rails-ujs
+//= require jquery
+//= require jquery_ujs
 //= require_tree .
+
+Vue.component('weather_station-row', {
+  template: '#weather_station-row',
+  props: {
+    weather_station: Object
+  },
+  data: function () {
+    return {
+      editMode: false,
+      errors: {}
+    }
+  }
+})
+var weather_stations = new Vue({
+  el: '#weather_stations',
+  data: {
+    weather_stations: [{name: "hi"}]
+  },
+  mounted: function() {
+    var that;
+    that = this;
+    $.ajax({
+      type: "GET",
+      url: '/weather_stations/test',
+      success: function(res) {
+        console.log(res)
+        that.weather_stations = res;
+      }
+    });
+  }
+});
