@@ -32,5 +32,10 @@
         %td {{ weather_station.reading.created_at }}
 
 %br
+
+%div#url
+  = select_tag "url", options_for_select(URL_TO_SCRAPE.keys, "VIC"), { 'v-on:change' => 'changeData($event)' }
+  / = select(:url, :state, URL_TO_SCRAPE.keys,{}, {class: 'hi'}, '@change': "greet()")
+%br
 %span data obtained from:
 =link_to "http://www.bom.gov.au/vic/observations/melbourne.shtml", "http://www.bom.gov.au/vic/observations/melbourne.shtml", blank: true

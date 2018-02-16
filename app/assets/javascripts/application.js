@@ -26,21 +26,47 @@ Vue.component('weather_station-row', {
     }
   }
 })
+
 var weather_stations = new Vue({
   el: '#weather_stations',
   data: {
-    weather_stations: [{name: "hi"}]
+    weather_stations: [{"name":"Melbourne (Olympic Park)",
+                        "reading":
+                          {"rainfall_amount":"6.0",
+                           "temperature":"21.3",
+                           "dew_point":"21.3",
+                           "wind_speed":"9.0",
+                           "wind_direction":"S",
+                           "created_at":"2018-01-29 09:10:47",
+                           "updated_at":"2018-01-29 09:10:47"}}]
   },
   mounted: function() {
     var that;
     that = this;
     $.ajax({
       type: "GET",
-      url: '/weather_stations/test',
+      url: '/weather_stations/test/VIC',
       success: function(res) {
-        console.log(res)
         that.weather_stations = res;
       }
     });
   }
 });
+
+
+var url = new Vue({
+  el: '#url',
+  methods: {
+    changeData: function (event) {
+      $.ajax({
+        type: "GET",
+        url: "/weather_stations/test/" + event.srcElement.value,
+        success: function(res) {
+          console.log("/weather_stations/test/" + event.srcElement.value)
+          weather_stations.weather_stations = res;
+          console.log(weather_stations)
+        }
+      });
+    }
+  }
+})
