@@ -1,0 +1,12 @@
+%nav.navbar.navbar-light.bg-light
+  %div.container-fluid
+    %div.navbar-header
+      %p.navbar-brand Weather Scraper
+    %ul.nav.navbar-nav
+      %span data obtained from:
+      %span#link
+        %a#id{':href' => 'link'} {{link}}
+    %ul.nav.navbar-nav#url
+      = label_tag "Choose state:"
+      = select_tag "url", options_for_select(URL_TO_SCRAPE.map { |k,v| [k,v] }), { 'v-on:change' => 'changeData($event)' }
+

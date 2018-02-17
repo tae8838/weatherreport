@@ -9,7 +9,8 @@
   </head>
 
   <body>
-    <%= yield %>
-    <%= javascript_include_tag 'application' %>
+      <%= render 'layouts/navbar' %>
+      <%= yield %>
+      <%= javascript_include_tag 'application' %>
   </body>
 </html>

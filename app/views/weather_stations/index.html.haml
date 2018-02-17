@@ -1,18 +1,6 @@
-%script{ type: 'text/x-template', id: 'weather_station-row' }
-  %tr
-    %td {{ weather_station.name }}
-    %td {{ weather_station.reading.rainfall_amount }}
-    %td {{ weather_station.reading.temperature }}
-    %td {{ weather_station.reading.dew_point }}
-    %td {{ weather_station.reading.wind_speed }}
-    %td {{ weather_station.reading.wind_direction }}
-
-
-
-%h1 Welcome to weather scraper!
 %div#weather_stations
-  %table
-    %thead
+  %table.table.table-striped
+    %thead.thead-light
       %tr
         %th Location
         %th Rainfall Intensity (mm/hour)
@@ -31,13 +19,3 @@
         %td {{ weather_station.reading.wind_direction }}
         %td {{ weather_station.reading.created_at }}
 
-%br
-
-%div#url
-  = select_tag "url", options_for_select(URL_TO_SCRAPE.map { |k,v| [k,v] }), { 'v-on:change' => 'changeData($event)' }
-  / = select(:url, :state, URL_TO_SCRAPE.keys,{}, {class: 'hi'}, '@change': "greet()")
-%br
-%span data obtained from:
-%div#link
-  %a#link {{ link }}
-/ %a{} "http://www.bom.gov.au/vic/observations/melbourne.shtml", "http://www.bom.gov.au/vic/observations/melbourne.shtml", blank: true
