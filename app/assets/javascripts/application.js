@@ -35,7 +35,7 @@ var weather_stations = new Vue({
       url: '/weather_stations/test/VIC',
       success: function(res) {
         that.weather_stations = res;
-        spinner.loading = 'loaded';
+        spinner.loading = 'data loaded';
       }
     });
   }
@@ -46,14 +46,14 @@ var url = new Vue({
   el: '#url',
   methods: {
     changeData: function (event) {
-      spinner.loading = 'loading';
+      spinner.loading = 'loading...';
       $.ajax({
         type: "GET",
         url: "/weather_stations/test/" + event.srcElement.selectedOptions[0].text,
         success: function(res) {
           weather_stations.weather_stations = res;
           link.link = event.srcElement.value;
-          spinner.loading = 'loaded';
+          spinner.loading = 'data loaded';
         }
       });
     }
@@ -70,6 +70,6 @@ var link = new Vue({
 var spinner = new Vue({
   el: '#spinner',
   data: {
-    loading: 'loading'
+    loading: 'loading...'
   }
 })
