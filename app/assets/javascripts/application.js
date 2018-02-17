@@ -35,6 +35,7 @@ var weather_stations = new Vue({
       url: '/weather_stations/test/VIC',
       success: function(res) {
         that.weather_stations = res;
+        spinner.loading = 'loaded';
       }
     });
   }
@@ -69,6 +70,6 @@ var link = new Vue({
 var spinner = new Vue({
   el: '#spinner',
   data: {
-    loading: 'loaded'
+    loading: 'loading'
   }
 })
