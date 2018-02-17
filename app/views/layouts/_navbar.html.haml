@@ -9,4 +9,5 @@
     %ul.nav.navbar-nav#url
       = label_tag "Choose state:"
       = select_tag "url", options_for_select(URL_TO_SCRAPE.map { |k,v| [k,v] }), { 'v-on:change' => 'changeData($event)' }
-
+    %div#spinner
+      %p status: {{loading}}

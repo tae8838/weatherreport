@@ -14,19 +14,6 @@
 //= require jquery_ujs
 //= require_tree .
 
-Vue.component('weather_station-row', {
-  template: '#weather_station-row',
-  props: {
-    weather_station: Object
-  },
-  data: function () {
-    return {
-      editMode: false,
-      errors: {}
-    }
-  }
-})
-
 var weather_stations = new Vue({
   el: '#weather_stations',
   data: {
@@ -58,13 +45,14 @@ var url = new Vue({
   el: '#url',
   methods: {
     changeData: function (event) {
-      console.log(event)
+      spinner.loading = 'loading';
       $.ajax({
         type: "GET",
         url: "/weather_stations/test/" + event.srcElement.selectedOptions[0].text,
         success: function(res) {
           weather_stations.weather_stations = res;
           link.link = event.srcElement.value;
+          spinner.loading = 'loaded';
         }
       });
     }
@@ -75,5 +63,12 @@ var link = new Vue({
   el: '#link',
   data: {
     link: "http://www.bom.gov.au/vic/observations/melbourne.shtml"
+  }
+})
+
+var spinner = new Vue({
+  el: '#spinner',
+  data: {
+    loading: 'loaded'
   }
 })
